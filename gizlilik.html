@@ -6,7 +6,7 @@
     <title>Gizlilik Politikası — Metrobüs Kaç Durak</title>
     <meta
       name="description"
-      content="Metrobüs Kaç Durak gizlilik politikası: konum yalnızca cihazda işlenir, veri toplanmaz."
+      content="Metrobüs Kaç Durak gizlilik politikası: konum yalnızca cihazda işlenir; yalnızca anonim kullanım istatistiği toplanır ve kapatılabilir."
     />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -26,15 +26,18 @@
       <main>
         <h1>Gizlilik Politikası</h1>
         <p class="lede">
-          Yürürlük tarihi: 4 Kasım 2026 · Son güncelleme: 4 Kasım 2026
+          Yürürlük tarihi: 4 Kasım 2026 · Son güncelleme: 9 Kasım 2026
         </p>
 
         <h2>Özet</h2>
         <p>
-          Metrobüs Kaç Durak hiçbir kişisel veri toplamaz, sunucuya göndermez ve
-          üçüncü kişilerle paylaşmaz. Uygulamada hesap, giriş, reklam, analiz ya
-          da izleme (tracking) aracı yoktur. Uygulama çalışırken internet
-          bağlantısı kullanmaz.
+          Metrobüs Kaç Durak konumunu veya başka bir kişisel verini sunucuya
+          göndermez ve üçüncü kişilerle paylaşmaz. Uygulamada hesap, giriş,
+          reklam ya da izleme (tracking) aracı yoktur. Tek istisna, uygulamayı
+          geliştirmek için topladığımız <strong>anonim kullanım istatistiğidir</strong>
+          (aşağıda "Anonim kullanım istatistiği" bölümüne bak); bunu Hakkında
+          ekranından istediğin zaman kapatabilirsin. Durak hesaplama internet
+          olmadan da çalışır.
         </p>
 
         <h2>Konum</h2>
@@ -90,12 +93,44 @@
           yaptığın bir işlemdir. Uygulamayı silmek bu kayıtları da siler.
         </p>
 
+        <h2>Anonim kullanım istatistiği</h2>
+        <p>
+          Hangi özelliklerin kullanıldığını anlayıp uygulamayı geliştirebilmek
+          için Google'ın Firebase Analytics (Google Analytics 4) hizmetini
+          kullanırız. Toplanan bilgiler:
+        </p>
+        <ul>
+          <li>hangi ekranların açıldığı,</li>
+          <li>
+            yolculuğun başlayıp bitmesi; seçilen biniş ve iniş durağının adı,
+            yön, durak sayısı ve yolculuğun kaç dakika sürdüğü,
+          </li>
+          <li>konum izninde sorun yaşanıp yaşanmadığı (yalnızca sorunun türü),</li>
+          <li>
+            uygulama sürümü, cihaz modeli, iOS sürümü, dil ve Google'ın
+            bağlantıdan çıkardığı yaklaşık ülke/şehir (IP adresin saklanmaz).
+          </li>
+        </ul>
+        <p>
+          Bu istatistikler uygulamaya özgü, rastgele üretilen bir kimlikle
+          tutulur. Bu kimlik reklam kimliğin (IDFA) değildir ve adın, e-postan
+          veya başka bir bilgiyle eşleştirilmez. <strong>Konumun, koordinatların
+          ve yolculuk kayıtların hiçbir zaman istatistiğe dahil edilmez.</strong>
+          Veriler Google'ın sunucularında işlenir (yurt dışına aktarım olabilir)
+          ve en fazla 14 ay saklanır.
+        </p>
+        <p>
+          Bunu istemezsen Hakkında → <em>Anonim kullanım istatistiği</em>
+          anahtarını kapatman yeterlidir; kapattığın andan itibaren hiçbir
+          istatistik gönderilmez.
+        </p>
+
         <h2>Toplanmayan veriler</h2>
         <p>
           Ad, e-posta, telefon numarası, kişi listesi, fotoğraf, sağlık verisi,
-          ödeme bilgisi, cihaz reklam kimliği (IDFA) ve kullanım istatistiği
-          toplanmaz. Uygulama hiçbir üçüncü taraf reklam veya analiz SDK'sı
-          içermez.
+          ödeme bilgisi ve cihaz reklam kimliği (IDFA) toplanmaz. Uygulama
+          reklam SDK'sı içermez; yalnızca yukarıda anlatılan Firebase Analytics
+          kullanılır.
         </p>
 
         <h2>Çocuklar</h2>
@@ -106,8 +141,10 @@
 
         <h2>Hakların</h2>
         <p>
-          Uygulama seninle ilgili hiçbir veriyi barındırmadığı ve hiçbir veriyi
-          bir sunucuda tutmadığı için silinecek veya taşınacak bir kayıt yoktur.
+          Kullanım istatistiği seni tanımlayan hiçbir bilgiyle bağlanmadığı için
+          sana ait bir kaydı ayıklamak mümkün değildir; dilediğin zaman
+          ölçümü kapatabilirsin. Uygulama başka hiçbir veriyi bir sunucuda
+          tutmaz.
           Cihazındaki kayıtları uygulamayı silerek veya Hakkında → Yolculuk
           kayıtları ekranından tek tek kaldırabilirsin.
         </p>

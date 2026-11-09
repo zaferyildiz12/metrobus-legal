@@ -15,5 +15,6 @@ App Store Connect'e girilen adresler:
 - Destek URL: `https://zaferyildiz12.github.io/metrobus-legal/destek.html`
 
 İçerik uygulamanın gerçek davranışına dayanır: konum yalnız cihazda işlenir,
-ağ kodu yok, `PrivacyInfo.xcprivacy` "veri toplanmıyor" der. Uygulamada veri
+konum yalnız cihazda işlenir; yalnız anonim kullanım istatistiği (Firebase Analytics /
+GA4, kapatılabilir) toplanır, `PrivacyInfo.xcprivacy` buna göre. Uygulamada veri
 toplayan bir değişiklik olursa bu sayfalar da güncellenmelidir.
