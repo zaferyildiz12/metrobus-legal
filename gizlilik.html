@@ -6,7 +6,7 @@
     <title>Gizlilik Politikası — Metrobüs Kaç Durak</title>
     <meta
       name="description"
-      content="Metrobüs Kaç Durak gizlilik politikası: konum yalnızca cihazda işlenir; yalnızca anonim kullanım istatistiği toplanır ve kapatılabilir."
+      content="Metrobüs Kaç Durak gizlilik politikası: koordinatlar yalnızca cihazda işlenir; yalnızca anonim kullanım istatistiği toplanır ve kapatılabilir."
     />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -46,8 +46,12 @@
           yolculuk sırasında cihazının konumunu kullanır. Konum:
         </p>
         <ul>
-          <li>yalnızca cihazının içinde işlenir,</li>
-          <li>hiçbir sunucuya gönderilmez ve hiçbir yerde kopyalanmaz,</li>
+          <li>koordinat olarak yalnızca cihazının içinde işlenir,</li>
+          <li>
+            koordinat olarak hiçbir sunucuya gönderilmez ve hiçbir yerde
+            kopyalanmaz (istatistik için yalnızca konumundan türetilen en yakın
+            durağın adı gönderilir, aşağıya bak),
+          </li>
           <li>üçüncü kişilerle, reklam ağlarıyla veya veri aracılarıyla paylaşılmaz.</li>
         </ul>
         <p>
@@ -107,6 +111,13 @@
           </li>
           <li>konum izninde sorun yaşanıp yaşanmadığı (yalnızca sorunun türü),</li>
           <li>
+            uygulamanın biniş durağı olarak önerdiği en yakın durağın adı ve ona
+            uzaklığının aralığı (ör. 0-500 m); koordinatın gönderilmez,
+          </li>
+          <li>
+            durak aramasında sonuç çıkmayan arama metni (en fazla 30 karakter),
+          </li>
+          <li>
             uygulama sürümü, cihaz modeli, iOS sürümü, dil ve Google'ın
             bağlantıdan çıkardığı yaklaşık ülke/şehir (IP adresin saklanmaz).
           </li>
@@ -114,8 +125,8 @@
         <p>
           Bu istatistikler uygulamaya özgü, rastgele üretilen bir kimlikle
           tutulur. Bu kimlik reklam kimliğin (IDFA) değildir ve adın, e-postan
-          veya başka bir bilgiyle eşleştirilmez. <strong>Konumun, koordinatların
-          ve yolculuk kayıtların hiçbir zaman istatistiğe dahil edilmez.</strong>
+          veya başka bir bilgiyle eşleştirilmez. <strong>Koordinatların ve
+          yolculuk kayıtların hiçbir zaman istatistiğe dahil edilmez.</strong>
           Veriler Google'ın sunucularında işlenir (yurt dışına aktarım olabilir)
           ve en fazla 14 ay saklanır.
         </p>
