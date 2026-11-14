@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Support — Metrobüs Kaç Durak</title>
+    <title>Support — Kaç Durak: Metrobüs, Metro</title>
     <meta
       name="description"
-      content="Support for Metrobüs Kaç Durak: setup, location permission, notifications, troubleshooting and contact."
+      content="Support for Kaç Durak: Metrobüs, Metro (iPhone and Android): setup, location permission, notifications, tunnel lines, battery settings, troubleshooting and contact."
     />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -15,7 +15,7 @@
       <header class="top">
         <a class="brand" href="index-en.html">
           <span class="mark" aria-hidden="true">MD</span>
-          Metrobüs Kaç Durak
+          Kaç Durak
         </a>
         <nav class="lang" aria-label="Language">
           <a href="destek.html">TR</a>
@@ -35,30 +35,42 @@
           <p>
             Can't find an answer? Email
             <a href="mailto:1zaferyildiz@gmail.com">1zaferyildiz@gmail.com</a>.
-            Including your iPhone model, iOS version and the stops you were
-            travelling between helps a lot.
+            Including your phone model, iOS or Android version and the stops you
+            were travelling between helps a lot.
           </p>
         </div>
 
-        <h2>Trying it without being on the Metrobüs</h2>
+        <h2>Trying it without being on a trip</h2>
         <p>
           Open the <strong>About</strong> screen with the <strong>(i)</strong>
           button at the top right and turn on the
           <strong>Demo trip</strong> switch. The app then ignores your real
-          location and plays a sped-up fake Metrobüs along your chosen route. A
+          location and plays a sped-up fake trip along your chosen route. A
           yellow <strong>SİM</strong> badge appears on the selection screen.
           Remember to turn it off before a real trip.
         </p>
 
         <h2>Location permission and the "Allow" button</h2>
         <p>
-          Counting stops requires location. Tapping <strong>Allow</strong> makes
-          iOS ask for "While Using the App"; the app keeps using location for the
-          duration of the trip, including while the screen is locked. If you
-          declined by mistake, re-enable it in iPhone Settings → Privacy &amp;
-          Security → Location Services → Metrobüs Kaç Durak, or use the
-          <strong>Open Settings</strong> button inside the app.
+          Counting stops requires location. The app keeps using location for
+          the duration of the trip, including while the screen is locked.
         </p>
+        <ul>
+          <li>
+            <strong>iPhone:</strong> tapping <strong>Allow</strong> makes iOS
+            ask for "While Using the App". If you declined by mistake,
+            re-enable it in iPhone Settings → Privacy &amp; Security → Location
+            Services → Kaç Durak, or use the
+            <strong>Open Settings</strong> button inside the app.
+          </li>
+          <li>
+            <strong>Android:</strong> tapping <strong>Allow</strong> makes
+            Android ask for location access; choose "While using the app".
+            "Allow all the time" is not needed. If you declined by mistake, go
+            to Settings → Apps → Kaç Durak → Permissions → Location
+            and choose <strong>Allow only while using the app</strong>.
+          </li>
+        </ul>
         <p>
           Your location never leaves the device. See the
           <a href="privacy.html">privacy policy</a>.
@@ -75,22 +87,95 @@
             won't be alerted while the screen is locked.
           </li>
           <li>
-            If alerts are silent, check iPhone Settings → Notifications →
-            Metrobüs Kaç Durak and enable
+            <strong>iPhone:</strong> if alerts are silent, check iPhone
+            Settings → Notifications → Kaç Durak and enable
             <strong>Time Sensitive Notifications</strong> and sound. Focus mode
             can also mute them.
           </li>
+          <li>
+            <strong>Android:</strong> on Android 13 and later the app asks for
+            notification permission. If you declined, turn it on in Settings →
+            Apps → Kaç Durak → Notifications. During a trip a
+            persistent notification stays in the notification shade; it shows
+            that tracking continues while the screen is locked and disappears
+            when the trip ends.
+          </li>
+          <li>
+            <strong>Android, silent mode:</strong> when the phone is on silent
+            or Do Not Disturb is on, the app still vibrates at 1 stop left and
+            on arrival; no sound plays.
+          </li>
         </ul>
+
+        <h2>Android: battery optimisation</h2>
+        <p>
+          Some Android phones (especially Xiaomi, Samsung and similar) may stop
+          the trip service to save battery; the counter then stops while the
+          screen is locked and no alert arrives. If needed, the app opens the
+          phone's <strong>App info</strong> screen; from there choose
+          <strong>Battery → Unrestricted</strong>. This setting is optional.
+        </p>
+        <ul>
+          <li>
+            <strong>General:</strong> Settings → Apps → Kaç Durak →
+            Battery → <strong>Unrestricted</strong>.
+          </li>
+          <li>
+            <strong>Samsung:</strong> same path, Battery →
+            <strong>Unrestricted</strong>; if the app is in the "Sleeping apps"
+            list, remove it.
+          </li>
+          <li>
+            <strong>Xiaomi / Redmi / POCO:</strong> Settings → Apps → Metrobüs
+            Kaç Durak → <strong>Battery saver: No restrictions</strong> and turn
+            on <strong>Autostart</strong>.
+          </li>
+        </ul>
+        <p>
+          Menu names and paths vary slightly by manufacturer and Android
+          version.
+        </p>
+
+        <h2>Android: no notification on the lock screen</h2>
+        <ul>
+          <li>
+            Check that notifications are allowed: Settings → Apps → Metrobüs
+            Kaç Durak → Notifications. The <strong>Trip status</strong>,
+            <strong>2 stops left</strong>, <strong>Get off at the next
+            stop</strong> and <strong>Arrival</strong> categories should be on.
+            It is normal for the <strong>Location tracking</strong> category to
+            look off or silent; it does not affect tracking.
+          </li>
+          <li>
+            In Settings → Notifications (Lock screen on some phones), make sure
+            notifications are shown on the lock screen.
+          </li>
+          <li>
+            With Do Not Disturb or a similar mode on, alerts play no sound and
+            may not appear on the lock screen; the vibration at 1 stop left and
+            on arrival still comes.
+          </li>
+          <li>
+            If the persistent notification never appears during a trip, the
+            phone may have stopped the service; apply the battery setting above
+            and restart the trip.
+          </li>
+        </ul>
+        <p>
+          Menu names vary by manufacturer.
+        </p>
 
         <h2>Common situations</h2>
         <ul>
           <li>
             <strong>"Waiting for location…"</strong> — GPS weakens in tunnels,
-            underpasses and indoors. It recovers once you're in the open.
+            underpasses and indoors. It recovers once you're in the open. For how
+            lines that run through tunnels work, see <strong>Tunnel lines</strong>
+            below.
           </li>
           <li>
             <strong>"Looks like you're off the line"</strong> — a location jump;
-            if you're on the Metrobüs the counter recovers shortly.
+            if you're on board the counter recovers shortly.
           </li>
           <li>
             <strong>"You may be heading the wrong way"</strong> — check the
@@ -104,9 +189,43 @@
             counter.
           </li>
           <li>
-            <strong>Battery</strong> — the screen stays on and location is used
-            during tracking, so the battery drains faster than usual on long
+            <strong>Battery</strong> — during tracking the screen stays on while
+            the app is open and location is used; if you lock the screen,
+            tracking continues. The battery drains faster than usual on long
             trips. That's expected.
+          </li>
+          <li>
+            <strong>Tracking ended by itself</strong> — if you forget to tap End, tracking stops
+            automatically after 120 minutes without stop progress or once the
+            trip passes 240 minutes in total, so battery and location aren't
+            wasted. If the app is in the background, a short "tracking stopped"
+            notification appears.
+          </li>
+        </ul>
+
+        <h2>Tunnel lines</h2>
+        <ul>
+          <li>
+            <strong>Why is the count an estimate?</strong> GPS does not work in
+            tunnels, so the app cannot see the train. On lines that run through
+            tunnels (most metro lines, the tunnel section of Marmaray) the
+            remaining stop count is <strong>estimated</strong> from schedule
+            times and shown with an <strong>estimated</strong> label.
+          </li>
+          <li>
+            <strong>"Train departed":</strong> when the train moves, tap
+            <strong>Train departed</strong>; the remaining stops are estimated
+            from schedule times. If you don't tap it, you won't get alerts.
+          </li>
+          <li>
+            <strong>"Fix my stop":</strong> if the counter drifts from your real
+            stop, tap <strong>Fix my stop</strong> and choose your current stop
+            from the list; counting continues from there.
+          </li>
+          <li>
+            <strong>It can be off:</strong> if the train is delayed or runs
+            fast, the estimate can be off by a stop or two. Check the stop name
+            and the announcements before you get off.
           </li>
         </ul>
 
@@ -115,18 +234,23 @@
           Each trip is logged on your device to help with troubleshooting (the
           last 20 trips at most). View them in About →
           <strong>Trip logs</strong> and send one yourself with
-          <strong>Share</strong>. Logs never leave the device unless you share
-          them.
+          <strong>Share</strong>. Logs contain the measured locations as
+          coordinates and never leave the device unless you share them.
         </p>
 
         <h2>About the app</h2>
         <ul>
-          <li>Beylikdüzü – Söğütlüçeşme line, 44 stops, both directions.</li>
           <li>
-            No route planning and no live bus positions; it only counts the
+            Kaç Durak: Metrobüs, Metro (formerly called Metrobüs Kaç Durak).
+            Covers Metrobüs, Marmaray, metro (M1A, M1B, M2, M3, M4, M5, M6, M7,
+            M8, M9, M11) and tram (T1, T4, T5) lines.
+          </li>
+          <li>
+            No route planning and no live vehicle positions; it only counts the
             stops remaining.
           </li>
           <li>No account, no login, no ads, no in-app purchases; the app is free.</li>
+          <li>Available for iPhone (App Store) and Android (Google Play).</li>
           <li>Turkish and English interface.</li>
           <li>All processing happens on device; no internet needed.</li>
         </ul>
@@ -138,10 +262,10 @@
         </p>
 
         <div class="meta">
-          <p>Metrobüs Kaç Durak · iOS 1.0</p>
+          <p>Kaç Durak: Metrobüs, Metro</p>
           <p>
-            Not affiliated with İBB / İETT. Stop data © OpenStreetMap
-            contributors, licensed under ODbL.
+            Not affiliated with İBB, İETT, Metro İstanbul or TCDD Taşımacılık.
+            Stop data © OpenStreetMap contributors, licensed under ODbL.
           </p>
         </div>
       </main>

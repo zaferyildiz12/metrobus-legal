@@ -1,6 +1,6 @@
 # metrobus-legal
 
-**Metrobüs Kaç Durak** iOS uygulamasının gizlilik politikası ve destek sayfaları.
+**Kaç Durak: Metrobüs, Metro** (eski adıyla Metrobüs Kaç Durak) iOS ve Android uygulamasının gizlilik politikası ve destek sayfaları.
 Statik HTML + tek CSS dosyası; derleme adımı yok, GitHub Pages ile yayınlanır.
 
 | Sayfa | TR | EN |
@@ -14,7 +14,9 @@ App Store Connect'e girilen adresler:
 - Gizlilik Politikası URL: `https://zaferyildiz12.github.io/metrobus-legal/gizlilik.html`
 - Destek URL: `https://zaferyildiz12.github.io/metrobus-legal/destek.html`
 
-İçerik uygulamanın gerçek davranışına dayanır: konum yalnız cihazda işlenir,
-konum yalnız cihazda işlenir; yalnız anonim kullanım istatistiği (Firebase Analytics /
+Google Play Console'a da aynı gizlilik politikası adresi girilir.
+
+İçerik uygulamanın gerçek davranışına dayanır: koordinatlar yalnız cihazda işlenir;
+yalnız anonim kullanım istatistiği (Firebase Analytics /
 GA4, kapatılabilir) toplanır, `PrivacyInfo.xcprivacy` buna göre. Uygulamada veri
 toplayan bir değişiklik olursa bu sayfalar da güncellenmelidir.

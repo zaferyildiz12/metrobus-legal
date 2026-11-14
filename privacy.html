@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Privacy Policy — Metrobüs Kaç Durak</title>
+    <title>Privacy Policy — Kaç Durak: Metrobüs, Metro</title>
     <meta
       name="description"
-      content="Privacy policy for Metrobüs Kaç Durak: coordinates are processed on device only; only anonymous usage statistics are collected, and you can turn them off."
+      content="Privacy policy for Kaç Durak: Metrobüs, Metro: coordinates are processed on device only; anonymous usage statistics (Firebase Analytics) are collected and you can turn them off."
     />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -15,7 +15,7 @@
       <header class="top">
         <a class="brand" href="index-en.html">
           <span class="mark" aria-hidden="true">MD</span>
-          Metrobüs Kaç Durak
+          Kaç Durak
         </a>
         <nav class="lang" aria-label="Language">
           <a href="gizlilik.html">TR</a>
@@ -26,18 +26,30 @@
       <main>
         <h1>Privacy Policy</h1>
         <p class="lede">
-          Effective: 4 November 2026 · Last updated: 9 November 2026
+          Effective: 4 November 2026 · Last updated: 14 November 2026
+        </p>
+        <p>
+          This policy applies to the <strong>Kaç Durak: Metrobüs, Metro</strong>
+          app (formerly called Metrobüs Kaç Durak).
         </p>
 
         <h2>Summary</h2>
         <p>
-          Metrobüs Kaç Durak does not send your location or any other personal
-          data to a server and does not share it with third parties. There are
-          no accounts, logins, ads or tracking tools in the app. The one
-          exception is <strong>anonymous usage statistics</strong> we collect to
-          improve the app (see "Anonymous usage statistics" below); you can turn
-          them off at any time in About. Counting stops works without an
-          internet connection.
+          Kaç Durak does not send your location coordinates to a server and
+          does not share them with third parties. There are no accounts, logins
+          or ads in the app, and it contains no advertising SDKs. The only data
+          that leaves the app is <strong>anonymous usage statistics</strong>
+          sent to Google's Firebase Analytics to improve the app (see
+          "Anonymous usage statistics" below). This measurement is
+          <strong>on by default</strong>; you can turn it off at any time in
+          About. Counting stops works without an internet connection.
+        </p>
+
+        <h2>Covered lines</h2>
+        <p>
+          The app shows how many stops are left before yours on the Metrobüs,
+          Marmaray, metro (M1A, M1B, M2, M3, M4, M5, M6, M7, M8, M9, M11) and
+          tram (T1, T4, T5) lines. This policy is the same for all of them.
         </p>
 
         <h2>Location</h2>
@@ -48,9 +60,9 @@
         <ul>
           <li>processed as coordinates only on your device,</li>
           <li>
-            never sent to a server as coordinates and never copied anywhere (for
-            statistics only the name of the nearest stop, derived from your
-            location, is sent; see below),
+            never sent to a server as coordinates (for statistics only the name
+            of the nearest stop, derived from your location, and a distance
+            range are sent; see below),
           </li>
           <li>
             never shared with third parties, advertising networks or data
@@ -60,76 +72,177 @@
         <p>
           Granting location access is optional. If you decline, the app still
           works; use the <strong>Demo trip</strong> switch on the About screen to
-          try the line without location. You can revoke access at any time in
-          iPhone Settings → Privacy &amp; Security → Location Services.
+          try the app without location. You can revoke access at any time: on
+          iPhone in Settings → Privacy &amp; Security → Location Services, on
+          Android in Settings → Apps → Kaç Durak → Permissions → Location.
         </p>
+
+        <h2>Location in the background</h2>
         <p>
-          The app uses background location so it can keep counting stops while
-          the screen is locked. This only happens after you start a trip and
-          ends when you stop it.
+          The app keeps using location while the screen is locked or the app is
+          in the background so it can keep counting stops. This only happens
+          after you start a trip and ends when you stop it. If you forget to tap
+          End, tracking stops by itself after 120 minutes without stop progress
+          or once the trip passes 240 minutes in total; if the app is in the
+          background, a short notification tells you. This way location is not
+          used unnecessarily.
+        </p>
+        <ul>
+          <li>
+            <strong>iPhone:</strong> during a trip the app uses iOS background
+            location; the blue location indicator appears in the status bar.
+          </li>
+          <li>
+            <strong>Android:</strong> during a trip a foreground service of type
+            "location" runs and a persistent notification is shown in the
+            notification shade; both end when the trip ends. On Android the app
+            does not ask for background location ("Allow all the time"); it
+            only uses location while it is open or during a trip.
+          </li>
+        </ul>
+
+        <h2>Tunnel lines and estimated counting</h2>
+        <p>
+          GPS does not work in tunnels, so on lines that run through tunnels
+          (most metro lines and the tunnel section of Marmaray) the remaining
+          stop count is <strong>estimated</strong> from the trip time; the
+          estimate can be off by a stop or two. This calculation happens on your
+          device. When the train departs you tap <strong>Train departed</strong>
+          on screen; if the estimate drifts, you pick your current stop yourself
+          with <strong>Fix my stop</strong>. If measurement is on, only the number
+          of stops such a correction moved is sent, as part of the anonymous
+          usage statistics described below.
         </p>
 
         <h2>Notifications</h2>
         <p>
           The app sends local notifications when you are 2 stops and 1 stop away
-          from your destination. These notifications are generated on your
+          from your destination, and on tunnel lines also based on the estimated
+          count; on iPhone a "Has the train left?" reminder may also appear on
+          tunnel lines. These notifications are generated and scheduled on your
           device; no notification server is involved and no notification data is
           transmitted. If you decline notification permission, the rest of the
-          app works normally.
+          app works normally. On Android 13 and later, notification permission
+          is requested separately inside the app. The persistent notification
+          shown on Android during a trip is also generated on your device and
+          is not sent anywhere.
+        </p>
+
+        <h2>Battery optimisation (Android)</h2>
+        <p>
+          Some Android phones (e.g. Xiaomi, Samsung) may stop the trip service
+          to save battery. If that happens, the app may open the phone's App
+          info screen (Battery → Unrestricted). Changing that setting is optional and does not
+          share any data; it only helps tracking continue while the screen is
+          locked.
         </p>
 
         <h2>Information stored on your device</h2>
         <p>The app keeps small records on your device to remember your choices:</p>
         <ul>
-          <li>your recent routes and selected stops,</li>
-          <li>settings such as language and the demo trip switch,</li>
+          <li>your last selected line, recent routes and selected stops,</li>
           <li>
-            trip logs kept for troubleshooting (stop crossings, approximate
-            location, app version and battery percentage).
+            settings such as language, the demo trip switch and the anonymous
+            statistics switch,
+          </li>
+          <li>
+            trip logs kept for troubleshooting: stop crossings, location
+            measurements (latitude, longitude, accuracy and speed), when the app
+            moved to the foreground or background, errors if any, events
+            produced by the tunnel estimate, app version, platform and battery
+            percentage.
           </li>
         </ul>
         <p>
+          Trip logs contain the measured locations as detailed coordinates.
           These records stay on your device, inside the app's own folder, and at
           most the last 20 trips are kept. They are never uploaded
           automatically. If you use the <strong>Share</strong> button on About →
           Trip logs, the file goes to whichever app you pick (e.g. Mail) — that
-          is an action you take yourself. Deleting the app deletes these records.
+          is an action you take yourself, and you should know the file contains
+          location before you share it. Deleting the app deletes these records.
         </p>
 
         <h2>Anonymous usage statistics</h2>
         <p>
           To understand which features are used and improve the app, we use
-          Google's Firebase Analytics (Google Analytics 4). What is collected:
+          Google's Firebase Analytics (Google Analytics 4). Measurement is on by
+          default. The events sent are:
         </p>
         <ul>
-          <li>which screens are opened,</li>
           <li>
-            when a trip starts and ends; the names of the boarding and
-            destination stops, direction, number of stops and trip length in
-            minutes,
+            which screens are opened (trip selection, tracking, arrival, About),
+          </li>
+          <li>
+            the selected line (e.g. Metrobüs, M2, T1) and its type (surface,
+            partly tunnel, tunnel); the line is added to every event,
+          </li>
+          <li>
+            when a trip starts and ends: the names of the boarding and
+            destination stops, direction, number of stops, completion
+            percentage, how it ended (arrival or manual finish), where the
+            boarding stop came from (nearest suggestion, recent route or your
+            own choice) and trip length in minutes,
+          </li>
+          <li>
+            how a stop was chosen (search, list, nearest suggestion, recent
+            route) and the name of the chosen stop,
           </li>
           <li>whether location permission had a problem (the type only),</li>
           <li>
+            permission results (whether location and notification permission
+            were granted or denied; only when the result changes),
+          </li>
+          <li>
+            technical information about alerts: how many stops were left when
+            the alert came, whether it arrived while the app was open or in the
+            background, whether notifications were enabled and whether the alert
+            was based on the tunnel estimate,
+          </li>
+          <li>
+            the number of stops skipped during tracking, the number of stops
+            remaining and whether the skip happened inside a tunnel,
+          </li>
+          <li>
+            tunnel estimate: that estimate mode started, by how many stops the
+            estimate was ahead when location came back, and by how many stops
+            <strong>Fix my stop</strong> changed the stop (numbers only),
+          </li>
+          <li>
             the name of the nearest stop the app suggests as your boarding stop
-            and a distance range (e.g. 0-500 m); your coordinates are not sent,
+            and a distance range (0-500 m, 500-1000 m, 1000-2000 m); your
+            coordinates are not sent,
           </li>
           <li>
-            the text of a stop search that returned no results (up to 30
-            characters),
+            the text of a stop search that returned no results (lower-cased, up
+            to 30 characters),
           </li>
           <li>
-            app version, device model, iOS version, language and the approximate
-            country/city Google derives from the connection (your IP address is
-            not stored).
+            that the demo trip switch was turned on or off, a recent route was
+            chosen, boarding and destination were swapped, and that trip logs
+            were shared with Share (only how many logs, not their contents),
+          </li>
+          <li>
+            user properties: interface language, whether notifications are
+            enabled and a range for how many trips you have made so far (0, 1,
+            2-4, 5+),
+          </li>
+          <li>
+            app version, device model, operating system (iOS or Android) version,
+            language and the approximate country/city Google derives from the
+            connection (your IP address is not stored).
           </li>
         </ul>
         <p>
-          These statistics are kept under a random, app-specific identifier. It
-          is not your advertising identifier (IDFA) and is never matched with
-          your name, email or any other information. <strong>Your coordinates and
-          trip logs are never included.</strong> The data is
-          processed on Google's servers (it may be transferred abroad) and kept
-          for at most 14 months.
+          During a demo trip the trip start, arrival and finish events are not
+          sent. These statistics are kept under a random, app-specific
+          identifier. It is not your advertising identifier (IDFA on iPhone,
+          Advertising ID on Android) and is never matched with your name, email
+          or any other information. In the Android version the advertising ID
+          permission (AD_ID) has been removed from the app; the advertising ID
+          is not read or collected. <strong>Your coordinates and trip logs are
+          never included.</strong> The data is processed on Google's servers (it
+          may be transferred abroad) and kept for at most 14 months.
         </p>
         <p>
           If you prefer not to take part, turn off About →
@@ -139,15 +252,32 @@
         <h2>Data we do not collect</h2>
         <p>
           No name, email address, phone number, contacts, photos, health data,
-          payment information or advertising identifier (IDFA) is collected. The
+          payment information or advertising identifier (IDFA on iPhone,
+          Advertising ID on Android) is collected. The
           app contains no advertising SDKs; the only analytics tool is Firebase
-          Analytics, described above.
+          Analytics, described above. The app has no accounts or logins, so
+          there is no account data either.
+        </p>
+
+        <h2>App stores</h2>
+        <p>
+          The app is distributed through the App Store for iPhone and Google
+          Play for Android. Data that Apple or Google collect themselves when
+          you download and update the app (e.g. your store account, download
+          and crash reports) is subject to their own privacy policies and is
+          outside our control:
+          <a href="https://www.apple.com/legal/privacy/">Apple</a>,
+          <a href="https://policies.google.com/privacy">Google</a>. After you
+          finish your first trip, the app tries once to open the store's rating
+          prompt; that prompt is shown by the store, and the app does not
+          collect any review text you write.
         </p>
 
         <h2>Children</h2>
         <p>
-          The app is suitable for all ages and, because it collects no personal
-          data from anyone, it collects none from children either.
+          The app collects no child-specific data: no accounts are created and
+          no name or contact details are taken. The anonymous usage statistics
+          are the same for users of every age and can be turned off in About.
         </p>
 
         <h2>Your rights</h2>
@@ -174,10 +304,10 @@
         </p>
 
         <div class="meta">
-          <p>Metrobüs Kaç Durak · iOS 1.0</p>
+          <p>Kaç Durak: Metrobüs, Metro</p>
           <p>
-            Not affiliated with İBB / İETT. Stop data © OpenStreetMap
-            contributors, licensed under ODbL.
+            Not affiliated with İBB, İETT, Metro İstanbul or TCDD Taşımacılık.
+            Stop data © OpenStreetMap contributors, licensed under ODbL.
           </p>
         </div>
       </main>

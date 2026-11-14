@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Gizlilik Politikası — Metrobüs Kaç Durak</title>
+    <title>Gizlilik Politikası — Kaç Durak: Metrobüs, Metro</title>
     <meta
       name="description"
-      content="Metrobüs Kaç Durak gizlilik politikası: koordinatlar yalnızca cihazda işlenir; yalnızca anonim kullanım istatistiği toplanır ve kapatılabilir."
+      content="Kaç Durak: Metrobüs, Metro gizlilik politikası: koordinatlar yalnızca cihazda işlenir; anonim kullanım istatistiği (Firebase Analytics) toplanır ve kapatılabilir."
     />
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -15,7 +15,7 @@
       <header class="top">
         <a class="brand" href="./">
           <span class="mark" aria-hidden="true">MD</span>
-          Metrobüs Kaç Durak
+          Kaç Durak
         </a>
         <nav class="lang" aria-label="Dil">
           <a href="gizlilik.html" aria-current="true">TR</a>
@@ -26,18 +26,31 @@
       <main>
         <h1>Gizlilik Politikası</h1>
         <p class="lede">
-          Yürürlük tarihi: 4 Kasım 2026 · Son güncelleme: 9 Kasım 2026
+          Yürürlük tarihi: 4 Kasım 2026 · Son güncelleme: 14 Kasım 2026
+        </p>
+        <p>
+          Bu politika <strong>Kaç Durak: Metrobüs, Metro</strong> uygulaması
+          (eski adıyla Metrobüs Kaç Durak) için geçerlidir.
         </p>
 
         <h2>Özet</h2>
         <p>
-          Metrobüs Kaç Durak konumunu veya başka bir kişisel verini sunucuya
-          göndermez ve üçüncü kişilerle paylaşmaz. Uygulamada hesap, giriş,
-          reklam ya da izleme (tracking) aracı yoktur. Tek istisna, uygulamayı
-          geliştirmek için topladığımız <strong>anonim kullanım istatistiğidir</strong>
-          (aşağıda "Anonim kullanım istatistiği" bölümüne bak); bunu Hakkında
-          ekranından istediğin zaman kapatabilirsin. Durak hesaplama internet
-          olmadan da çalışır.
+          Kaç Durak, konum koordinatlarını sunucuya göndermez ve üçüncü
+          kişilerle paylaşmaz. Uygulamada hesap, giriş ya da reklam yoktur;
+          reklam SDK'sı içermez. Tek veri çıkışı, uygulamayı geliştirmek için
+          Google'ın Firebase Analytics hizmetine giden
+          <strong>anonim kullanım istatistiğidir</strong> (aşağıda "Anonim
+          kullanım istatistiği" bölümüne bak). Bu ölçüm
+          <strong>varsayılan olarak açıktır</strong>; Hakkında ekranından
+          istediğin zaman kapatabilirsin. Durak hesaplama internet olmadan da
+          çalışır.
+        </p>
+
+        <h2>Kapsanan hatlar</h2>
+        <p>
+          Uygulama metrobüs, Marmaray, metro (M1A, M1B, M2, M3, M4, M5, M6, M7,
+          M8, M9, M11) ve tramvay (T1, T4, T5) hatlarında ineceğin durağa kaç
+          durak kaldığını gösterir. Bu politika hepsi için aynıdır.
         </p>
 
         <h2>Konum</h2>
@@ -48,32 +61,79 @@
         <ul>
           <li>koordinat olarak yalnızca cihazının içinde işlenir,</li>
           <li>
-            koordinat olarak hiçbir sunucuya gönderilmez ve hiçbir yerde
-            kopyalanmaz (istatistik için yalnızca konumundan türetilen en yakın
-            durağın adı gönderilir, aşağıya bak),
+            koordinat olarak hiçbir sunucuya gönderilmez (istatistik için
+            yalnızca konumundan türetilen en yakın durağın adı ve mesafe aralığı
+            gönderilir, aşağıya bak),
           </li>
           <li>üçüncü kişilerle, reklam ağlarıyla veya veri aracılarıyla paylaşılmaz.</li>
         </ul>
         <p>
           Konum izni vermek zorunlu değildir. İzin vermezsen uygulama çalışmaya
           devam eder; Hakkında ekranındaki <strong>Demo yolculuk</strong> anahtarı
-          ile hattı konum kullanmadan deneyebilirsin. İzni istediğin zaman
-          iPhone Ayarlar → Gizlilik ve Güvenlik → Konum Servisleri bölümünden
-          kapatabilirsin.
+          ile uygulamayı konum kullanmadan deneyebilirsin. İzni istediğin zaman
+          kapatabilirsin: iPhone'da Ayarlar → Gizlilik ve Güvenlik → Konum
+          Servisleri, Android'de Ayarlar → Uygulamalar → Kaç Durak → İzinler →
+          Konum.
         </p>
+
+        <h2>Arka planda konum</h2>
         <p>
-          Yolculuk sırasında ekran kilitliyken de durak saymaya devam edebilmek
-          için uygulama arka planda konum kullanır. Bu yalnızca sen bir yolculuk
-          başlattığında ve yolculuk bitene kadar geçerlidir; yolculuğu
-          durdurduğunda arka plan konumu da durur.
+          Yolculuk sırasında ekran kilitliyken ya da uygulama arka plandayken de
+          durak saymaya devam edebilmek için uygulama konumu kullanmayı sürdürür.
+          Bu yalnızca sen bir yolculuk başlattığında ve yolculuk bitene kadar
+          geçerlidir; yolculuğu durdurduğunda konum kullanımı da durur. Bitir'e
+          basmayı unutursan takip, 120 dakika boyunca durak ilerlemesi olmazsa ya
+          da yolculuk toplam 240 dakikayı aşarsa kendiliğinden biter; uygulama
+          arka plandaysa bunu kısa bir bildirimle haber verir. Böylece konum
+          gereksiz yere kullanılmaz.
+        </p>
+        <ul>
+          <li>
+            <strong>iPhone:</strong> yolculuk sürerken iOS'un arka plan konum
+            özelliği kullanılır; durum çubuğunda mavi konum göstergesi görünür.
+          </li>
+          <li>
+            <strong>Android:</strong> yolculuk sürerken "konum" türünde bir ön
+            plan servisi çalışır ve bildirim çubuğunda kalıcı bir bildirim
+            görünür; yolculuk bitince servis de bildirim de kapanır. Android'de
+            arka plan konum izni ("Her zaman izin ver") istenmez; uygulama
+            konumu yalnızca açıkken ya da yolculuk sırasında kullanır.
+          </li>
+        </ul>
+
+        <h2>Tünel hatları ve tahmini sayım</h2>
+        <p>
+          Tünelde GPS çalışmadığı için tünelden geçen hatlarda (metroların
+          çoğu, Marmaray'ın tünel bölümü) kalan durak sayısı sefer süresine göre
+          <strong>tahmin edilir</strong>; tahmin bir-iki durak sapabilir. Bu
+          hesap cihazında yapılır. Tren hareket edince ekrandaki
+          <strong>Tren kalktı</strong> düğmesine dokunursun; tahmin kayarsa
+          <strong>Durağı düzelt</strong> ile bulunduğun durağı kendin seçersin.
+          Ölçüm açıksa bu düzeltmenin yalnızca durak sayısı farkı, aşağıda
+          anlatılan anonim istatistiğe gider.
         </p>
 
         <h2>Bildirimler</h2>
         <p>
-          İneceğin durağa 2 durak ve 1 durak kaldığında uyarabilmek için yerel
-          bildirim gönderir. Bu bildirimler cihazında üretilir; bir bildirim
+          İneceğin durağa 2 durak ve 1 durak kaldığında, tünel hatlarında ayrıca
+          tahmini sayımla uyarabilmek için yerel bildirim gönderir; iPhone'da
+          tünel hatlarında "Tren kalktı mı?" hatırlatması da gelebilir. Bu
+          bildirimler cihazında üretilir ve cihazında zamanlanır; bir bildirim
           sunucusu kullanılmaz ve bildirim verisi hiçbir yere iletilmez.
           Bildirim izni vermezsen uygulamanın diğer bölümleri normal çalışır.
+          Android 13 ve üzerinde bildirim izni uygulama içinde ayrıca istenir.
+          Android'de yolculuk sırasında görünen kalıcı bildirim de cihazında
+          üretilir ve hiçbir yere gönderilmez.
+        </p>
+
+        <h2>Pil optimizasyonu (Android)</h2>
+        <p>
+          Bazı Android telefonlar (ör. Xiaomi, Samsung) pil tasarrufu için
+          yolculuk sırasındaki servisi kapatabilir. Bu olursa uygulama seni
+          telefonun Uygulama bilgisi ekranına (Pil → Kısıtlanmamış)
+          yönlendirebilir. Bu ayarı değiştirmek isteğe
+          bağlıdır ve herhangi bir veri paylaşımı anlamına gelmez; yalnızca
+          takibin ekran kilitliyken kesilmemesine yardımcı olur.
         </p>
 
         <h2>Cihazda saklanan bilgiler</h2>
@@ -81,54 +141,105 @@
           Uygulama, tercihlerini hatırlamak için cihazında küçük kayıtlar tutar:
         </p>
         <ul>
-          <li>son seçtiğin rotalar ve durak tercihleri,</li>
-          <li>dil ve demo yolculuk anahtarı gibi ayarlar,</li>
+          <li>son seçtiğin hat, rotalar ve durak tercihleri,</li>
+          <li>dil, demo yolculuk ve anonim istatistik anahtarı gibi ayarlar,</li>
           <li>
-            sorun giderme için tutulan yolculuk kayıtları (durak geçişleri,
-            yaklaşık konum, uygulama sürümü ve pil yüzdesi).
+            sorun giderme için tutulan yolculuk kayıtları: durak geçişleri,
+            konum ölçümleri (enlem, boylam, doğruluk ve hız), uygulamanın ön
+            plana ya da arka plana geçişleri, varsa hatalar, tünelde tahminle
+            verilen olaylar, uygulama sürümü, platform ve pil yüzdesi.
           </li>
         </ul>
         <p>
+          Yolculuk kayıtları ölçülen konumları ayrıntılı koordinatlarla içerir.
           Bu kayıtlar yalnızca cihazında bulunur; uygulamanın erişebildiği
           klasörde tutulur ve en fazla son 20 yolculuk saklanır. Kayıtlar
           hiçbir yere otomatik olarak gönderilmez. Hakkında → Yolculuk kayıtları
           ekranındaki <strong>Paylaş</strong> düğmesini kullanırsan dosya, senin
           seçtiğin uygulamaya (ör. e-posta) aktarılır — bu yalnızca senin
-          yaptığın bir işlemdir. Uygulamayı silmek bu kayıtları da siler.
+          yaptığın bir işlemdir ve paylaşmadan önce dosyanın konum içerdiğini
+          bilmelisin. Uygulamayı silmek bu kayıtları da siler.
         </p>
 
         <h2>Anonim kullanım istatistiği</h2>
         <p>
           Hangi özelliklerin kullanıldığını anlayıp uygulamayı geliştirebilmek
           için Google'ın Firebase Analytics (Google Analytics 4) hizmetini
-          kullanırız. Toplanan bilgiler:
+          kullanırız. Ölçüm varsayılan olarak açıktır. Gönderilen olaylar:
         </p>
         <ul>
-          <li>hangi ekranların açıldığı,</li>
           <li>
-            yolculuğun başlayıp bitmesi; seçilen biniş ve iniş durağının adı,
-            yön, durak sayısı ve yolculuğun kaç dakika sürdüğü,
+            hangi ekranların açıldığı (yolculuk seçimi, takip, varış, Hakkında),
+          </li>
+          <li>
+            seçili hat (ör. metrobüs, M2, T1) ve hattın türü (yüzeyde, kısmen
+            tünel, tünel); hat bilgisi her olaya eklenir,
+          </li>
+          <li>
+            yolculuğun başlayıp bitmesi: seçilen biniş ve iniş durağının adı,
+            yön, durak sayısı, tamamlanma oranı, bitiş nedeni (varış ya da elle
+            bitirme), biniş durağının nereden geldiği (en yakın öneri, son rota
+            ya da kendi seçimin) ve yolculuğun kaç dakika sürdüğü,
+          </li>
+          <li>
+            bir durağın nasıl seçildiği (arama, liste, en yakın öneri, son rota)
+            ve seçilen durağın adı,
           </li>
           <li>konum izninde sorun yaşanıp yaşanmadığı (yalnızca sorunun türü),</li>
           <li>
+            izin sonuçları (konum ve bildirim izninin verildiği ya da
+            reddedildiği; yalnızca sonuç değişince),
+          </li>
+          <li>
+            uyarılarla ilgili teknik bilgi: kaç durak kala uyarı geldiği,
+            uyarının uygulama açıkken mi arka planda mı geldiği, bildirim izninin
+            açık olup olmadığı ve uyarının tünel tahminiyle verilip verilmediği,
+          </li>
+          <li>
+            takipte atlanan durak sayısı, kalan durak sayısı ve atlamanın tünel
+            içinde olup olmadığı,
+          </li>
+          <li>
+            tünel tahmini: tahmin modunun başladığı, konum geri geldiğinde
+            tahminin kaç durak fazla çıktığı ve <strong>Durağı düzelt</strong> ile
+            durağın kaç durak değiştirildiği (yalnızca sayı),
+          </li>
+          <li>
             uygulamanın biniş durağı olarak önerdiği en yakın durağın adı ve ona
-            uzaklığının aralığı (ör. 0-500 m); koordinatın gönderilmez,
+            uzaklığının aralığı (0-500 m, 500-1000 m, 1000-2000 m); koordinatın
+            gönderilmez,
           </li>
           <li>
-            durak aramasında sonuç çıkmayan arama metni (en fazla 30 karakter),
+            durak aramasında sonuç çıkmayan arama metni (küçük harfe çevrilmiş,
+            en fazla 30 karakter),
           </li>
           <li>
-            uygulama sürümü, cihaz modeli, iOS sürümü, dil ve Google'ın
-            bağlantıdan çıkardığı yaklaşık ülke/şehir (IP adresin saklanmaz).
+            demo yolculuk anahtarının açılıp kapandığı, son rotalardan birinin
+            seçildiği, biniş ve iniş durağının yer değiştirildiği ve yolculuk
+            kaydının Paylaş ile paylaşıldığı (yalnızca kaç kayıt olduğu; kayıtların
+            içeriği değil),
+          </li>
+          <li>
+            kullanıcı özellikleri: arayüz dili, bildirim izninin açık olup
+            olmadığı ve şimdiye kadar yaptığın yolculuk sayısının aralığı (0, 1,
+            2-4, 5+),
+          </li>
+          <li>
+            uygulama sürümü, cihaz modeli, işletim sistemi (iOS veya Android)
+            sürümü, dil ve Google'ın bağlantıdan çıkardığı yaklaşık ülke/şehir
+            (IP adresin saklanmaz).
           </li>
         </ul>
         <p>
-          Bu istatistikler uygulamaya özgü, rastgele üretilen bir kimlikle
-          tutulur. Bu kimlik reklam kimliğin (IDFA) değildir ve adın, e-postan
-          veya başka bir bilgiyle eşleştirilmez. <strong>Koordinatların ve
-          yolculuk kayıtların hiçbir zaman istatistiğe dahil edilmez.</strong>
-          Veriler Google'ın sunucularında işlenir (yurt dışına aktarım olabilir)
-          ve en fazla 14 ay saklanır.
+          Demo yolculuk sırasında yolculuğun başlama, varış ve bitiş olayları
+          gönderilmez. Bu istatistikler uygulamaya özgü, rastgele üretilen bir
+          kimlikle tutulur. Bu kimlik reklam kimliğin (iPhone'da IDFA, Android'de
+          Reklam Kimliği / Advertising ID) değildir ve adın, e-postan veya başka
+          bir bilgiyle eşleştirilmez. Android sürümünde reklam kimliği izni
+          (AD_ID) uygulamadan kaldırılmıştır; reklam kimliği okunmaz ve toplanmaz.
+          <strong>Koordinatların ve yolculuk kayıtların hiçbir zaman istatistiğe
+          dahil edilmez.</strong> Veriler Google'ın sunucularında işlenir (yurt
+          dışına aktarım olabilir) ve en fazla 14 ay saklanır.
         </p>
         <p>
           Bunu istemezsen Hakkında → <em>Anonim kullanım istatistiği</em>
@@ -139,15 +250,32 @@
         <h2>Toplanmayan veriler</h2>
         <p>
           Ad, e-posta, telefon numarası, kişi listesi, fotoğraf, sağlık verisi,
-          ödeme bilgisi ve cihaz reklam kimliği (IDFA) toplanmaz. Uygulama
+          ödeme bilgisi ve cihaz reklam kimliği (iPhone'da IDFA, Android'de
+          Reklam Kimliği) toplanmaz. Uygulama
           reklam SDK'sı içermez; yalnızca yukarıda anlatılan Firebase Analytics
-          kullanılır.
+          kullanılır. Uygulamada hesap ya da giriş olmadığı için hesap bilgisi
+          de yoktur.
+        </p>
+
+        <h2>Uygulama mağazaları</h2>
+        <p>
+          Uygulama iPhone için App Store'dan, Android için Google Play'den
+          dağıtılır. Uygulamayı indirirken ve güncellerken Apple veya Google'ın
+          kendi topladığı veriler (ör. mağaza hesabın, indirme ve çökme
+          raporları) bu şirketlerin kendi gizlilik politikalarına tabidir ve
+          bizim kontrolümüzde değildir:
+          <a href="https://www.apple.com/legal/privacy/">Apple</a>,
+          <a href="https://policies.google.com/privacy">Google</a>. İlk
+          yolculuğunu tamamladığında uygulama, mağazanın değerlendirme
+          penceresini bir kez açmayı dener; bu pencere mağaza tarafından
+          gösterilir ve uygulama yazdığın bir yorum metni toplamaz.
         </p>
 
         <h2>Çocuklar</h2>
         <p>
-          Uygulama her yaş için uygundur ve hiç kimseden kişisel veri toplamadığı
-          için çocuklardan da veri toplamaz.
+          Uygulama çocuklara özel bir veri toplamaz: hesap açılmaz, ad ya da
+          iletişim bilgisi alınmaz. Anonim kullanım istatistiği her yaştan
+          kullanıcı için aynıdır ve Hakkında ekranından kapatılabilir.
         </p>
 
         <h2>Hakların</h2>
@@ -174,10 +302,11 @@
         </p>
 
         <div class="meta">
-          <p>Metrobüs Kaç Durak · iOS 1.0</p>
+          <p>Kaç Durak: Metrobüs, Metro</p>
           <p>
-            İBB / İETT ile bağlantılı değildir. Durak verisi © OpenStreetMap
-            katkıcıları, ODbL lisansı altında.
+            İBB, İETT, Metro İstanbul ve TCDD Taşımacılık ile bağlantılı
+            değildir. Durak verisi © OpenStreetMap katkıcıları, ODbL lisansı
+            altında.
           </p>
         </div>
       </main>
